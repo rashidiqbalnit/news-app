@@ -1,11 +1,11 @@
-import React, { Component } from 'react'
+import React from 'react'
 
-export class NewsItem extends Component {
+  const NewsItem =(props)=>{
 
-  render() {
-    let {title, description, imageUrl, newsUrl, author, date,source} = this.props;  // here we are using destructuring to extract title and description from API using props.
+    let {title, description, imageUrl, newsUrl, author, date,source} = props;  // here we are using destructuring to extract title and description from API using props.
    
     return (
+
       <div className="my-3">
         <div className="card">
          <div style={{
@@ -26,8 +26,8 @@ export class NewsItem extends Component {
          </div>
         </div>
       </div>
+      
     )
-  }
 }
 
 
